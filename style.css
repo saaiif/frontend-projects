@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9cc2cf;
+  font-family: "Outfit", sans-serif;
+}
+
+p {
+  font-size: 16px;
+  color: #5f574e;
+}
+
+ul {
+  list-style: none;
+}
+
+.dot {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+/* end globalrules */
+/* start main rules */
+main {
+  margin: 50px auto;
+  padding: 40px;
+  background-color: white;
+  border-radius: 20px;
+}
+@media (min-width: 1200px) {
+  main {
+    width: 900px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  main {
+    width: 700px !important;
+  }
+}
+@media (min-width: 376px) and (max-width: 767px) {
+  main {
+    width: calc(100% - 60px) !important;
+  }
+}
+@media (max-width: 375px) {
+  main {
+    width: calc(100% - 40px) !important;
+  }
+}
+main header {
+  margin-bottom: 30px;
+}
+main header img {
+  border-radius: 20px;
+  max-width: 100%;
+}
+main .content h1 {
+  font-family: "Young Serif", serif;
+  color: #302d2c;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+main .content .preperation-time {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff5fa;
+  margin-top: 30px;
+}
+main .content .preperation-time h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #7b284f;
+  margin-bottom: 10px;
+}
+main .content .preperation-time ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .content .preperation-time ul li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+main .content .preperation-time ul li .dot {
+  background-color: #7b454f;
+}
+main .content .ingredients,
+main .content .instructions {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e4ded8;
+}
+main .content .ingredients h2,
+main .content .instructions h2 {
+  font-family: "Young Serif", serif;
+  color: #854632;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+main .content .ingredients ul,
+main .content .instructions ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .content .ingredients ul li,
+main .content .instructions ul li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+main .content .ingredients ul li .dot,
+main .content .instructions ul li .dot {
+  background-color: #854632;
+}
+main .content .instructions ul li {
+  align-items: flex-start;
+}
+main .content .instructions ul li .number {
+  color: #854632;
+  font-weight: 600;
+  position: relative;
+}
+main .content .instructions ul li .number::after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background-color: #854632;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+}
+main .content .nutrition {
+  margin-top: 20px;
+}
+main .content .nutrition h2 {
+  font-family: "Young Serif", serif;
+  color: #854632;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+main .content .nutrition .all-facts {
+  margin-top: 10px;
+}
+main .content .nutrition .all-facts .facts {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+main .content .nutrition .all-facts .facts:not(:last-of-type) {
+  border-bottom: 1px solid #e4ded8;
+}
+main .content .nutrition .all-facts .facts:last-of-type {
+  padding-bottom: 0;
+}
+main .content .nutrition .all-facts .facts p {
+  width: 50%;
+}
+main .content .nutrition .all-facts .facts span {
+  font-size: 16px;
+  color: #854632;
+  font-weight: 400;
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+  color: #000;
+}
